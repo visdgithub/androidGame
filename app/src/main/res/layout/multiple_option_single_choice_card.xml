@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#451a42">
+
+<FrameLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#ffff0000" >
+
+</FrameLayout>
+
+<FrameLayout
+    android:id="@+id/questcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#451a42"
+    android:layout_above="@+id/nextStageButton">
+
+    <com.istarindia.visd.cardauto.customViews.AutoResizeTextView
+        android:layout_width="match_parent"
+        android:layout_height="334dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="question text"
+        android:id="@+id/questtext"
+        android:enabled="false"
+        android:textColor="#e9d32f"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/abc_action_bar_default_height_material"
+        android:textStyle="bold|italic"
+        android:textColorHighlight="#e48181"
+        android:layout_gravity="center_horizontal|bottom" />
+
+
+</FrameLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Next Stage"
+    android:id="@+id/nextStageButton"
+    android:layout_alignParentBottom="true"
+    android:background="#0d28d1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentLeft="true"
+    android:textColor="#f3e8e8"
+    android:layout_gravity="center_horizontal|bottom" />
+
+<com.istarindia.visd.cardauto.customViews.AutoResizeTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Multiple Options single Choice Card"
+    android:id="@+id/textView"
+    android:enabled="false"
+    android:textColor="#e9d32f"
+    android:textSize="@dimen/abc_action_bar_default_height_material"
+    android:textStyle="bold|italic"
+    android:textColorHighlight="#e48181"
+    android:layout_gravity="center_horizontal|top"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/questcontainer" />
+
+</RelativeLayout>
